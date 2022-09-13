@@ -1,0 +1,148 @@
+/*  main code  */
+body {
+    background-color: #F5F5F5;
+}
+
+.container {
+    background-color: #FFF; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.error-msg {
+    color: #e93535;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.btn-none {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+/************************************************************************/
+/*  colors  */
+.menu {
+    background: #4768b5;
+}
+
+.menu .items .item {
+    border-color: #6780cc !important;
+}
+.menu .items .item a,
+.menu .items .item .logout_btn {
+    color: #9fb5ef;
+}
+.menu .items .item:hover {
+  background-color: #4f6ebd;
+}
+.menu .items .item:hover a,
+.menu .items .item:hover .logout_btn {
+    color: #cfe5ff;
+}
+
+.menu .items .item-active {
+    background-color:#5172c3;
+    color: #FFF;
+}
+
+.discussions {
+    background-color: #87a3ec;
+}
+
+.discussions .discussion {
+    background-color: #FAFAFA;
+}
+.discussions .message-active {
+    background-color: #FFF;
+}
+
+.discussions .discussion,
+.discussions .message-active,
+.discussions .search .searchbar,
+.friends_suggestions .suggestion,
+.timer,
+.footer-chat {
+    border-color: #E0E0E0 !important;
+}
+
+.discussions .search,
+.discussions .search .searchbar *::-webkit-input-placeholder,
+.discussions .search .searchbar input *:-moz-placeholder,
+.discussions .search .searchbar input *::-moz-placeholder,
+.discussions .search .searchbar input *:-ms-input-placeholder {
+    color: #E0E0E0;
+}
+
+.discussions .search .searchbar,
+.timer,
+.header-chat {
+    background-color: #FFF;
+}
+
+.discussions .discussion .name,
+.discussions .discussion .message,
+.chat .header-chat .name,
+.chat .footer-chat .name,
+.chat .messages-chat .chat_empty {
+    color:#515151;
+}
+
+.discussions .discussion .badge {
+    background-color: #e42121;
+}
+
+.chat .messages-chat .text {
+    background-color: #f6f6f6;
+}
+
+.response .text {
+    background-color: #e3effd !important;
+}
+
+.footer-chat *::-webkit-input-placeholder,
+.footer-chat input *:-moz-placeholder,
+.footer-chat input *::-moz-placeholder,
+.footer-chat input *:-ms-input-placeholder,
+.chat .footer-chat .icon {
+    color: #C0C0C0;
+}
+
+/**********************************************************************/
+/*  chat image  */
+.discussions .discussion .photo,
+.chat .header-chat .photo,
+.chat .messages-chat .message .photo,
+.friends_suggestions .suggestion .photo,
+.profile_container .photo {
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #E6E7ED;
+    position: relative;
+}
+
+.discussions .discussion .photo img,
+.chat .header-chat .photo img,
+.chat .messages-chat .message .photo img,
+.friends_suggestions .suggestion .photo img,
+.profile_container .photo img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.online {
+    position: absolute;
+    top: 37px;
+    left: 39px;
+    width: 13px;
+    height: 13px;
+    background-color: #8BC34A;
+    border-radius: 13px;
+    border: 3px solid #FAFAFA;
+}

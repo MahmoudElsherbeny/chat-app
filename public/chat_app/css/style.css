@@ -1,0 +1,394 @@
+/* ===== MENU ===== */
+.menu {
+  padding: 20px 0;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.menu .items {
+  list-style:none;
+  margin: auto;
+  padding: 0;
+}
+
+.menu .items .item {
+  border-bottom: 1px solid;
+  font-size: 15pt;
+}
+.menu .items .item a,
+.menu .items .item .logout_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu .items .item .badge {
+  border-radius: 50%;
+  font-size: 11px;
+  padding: 3px 5px;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+
+.menu .items .item:hover {
+  cursor: pointer;
+}
+
+/* === CONVERSATIONS === */
+
+.discussions {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.20);
+  overflow: hidden;
+  display: inline-block;
+}
+
+.discussions .discussions_container {
+  height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.discussions .discussion {
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid;
+}
+
+.discussions .discussion a {
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.discussions .search {
+  display:flex;
+  align-items: center;
+  justify-content: center; 
+  height: 62px;
+}
+
+.discussions .search .searchbar {
+  height: 37px;
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 50px;
+  border: 1px solid;
+  display:flex;
+  align-items: center;
+}
+
+.discussions .search .searchbar input {
+  margin-left: 15px;
+  height:35px;
+  width:100%;
+  border:none;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.discussions .message-active {
+  border-bottom: solid 1px;
+  width: 101%;
+  margin-left: -2.5px
+}
+
+.discussions .discussion .photo {
+    margin-left:20px;
+}
+
+.discussions .discussion .desc-contact {
+  height: 46px;
+  width:50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.discussions .discussion .name {
+  margin: 0 0 0 20px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 12pt;
+}
+
+.discussions .discussion .message {
+  margin: 5px 0 0 20px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 9pt;
+}
+
+.discussions .discussion .badge {
+  border-radius: 50%;
+  margin-left: 17%;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+/**********************************************************/
+/*   friends suggestions   */
+.friends_suggestions_header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  height: 62px;
+  padding: 0 18px;
+}
+
+.friends_suggestions_header .item {
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+  padding: 21px 18px;
+}
+
+.friends_suggestions {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.friends_suggestions .suggestion {
+  border-bottom: 1px solid;
+  display:flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 12px;
+  width: 92%;
+}
+
+.friends_suggestions .suggestion .desc-contact {
+  width:84%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.friends_suggestions .suggestion .name {
+  margin: 0 0 0 20px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 12pt;
+}
+
+.friends_suggestions .suggestion .info {
+  color: #bbb;
+  font-size: 12px;
+  margin: 0 0 0 20px;
+}
+
+.friends_suggestions .suggestion .message {
+  margin: 5px 0 0 20px;
+  font-family:'Montserrat', sans-serif;
+  font-size: 9pt;
+}
+
+.friends_suggestions .suggestion .actions {
+  display: flex;
+  justify-content: center;
+}
+
+.friends_suggestions .suggestion .actions i {
+  color: #4768b5;
+  font-size: 17px;
+  padding: 0 4px;
+}
+
+.friends_suggestions .suggestion .actions i:hover {
+  color: #3a5594;
+}
+
+
+/**********************************************************/
+/*   chat   */
+.chat {
+    padding: 0;
+}
+
+.header-chat {
+  height: 74px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.100);
+  display:flex;
+  align-items: center;
+}
+
+.chat .header-chat .photo {
+    margin-left: 30px;
+}
+
+.chat .header-chat .name {
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  font-family:'Montserrat', sans-serif;
+  font-size: 14pt;
+}
+
+.chat .header-chat .right {
+  position: absolute;
+  right: 24px;
+}
+
+.chat .messages-chat {
+    padding: 25px 28px;
+    height: 77%;
+    overflow-y: scroll;
+}
+
+.chat .messages-chat .chat_empty {
+  font-size: 22px;
+  font-family: monospace;
+  padding: 20% 0;
+}
+
+.chat .messages-chat .message {
+  display:flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chat .messages-chat .text {
+  margin: 0 35px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.text-only {
+  margin-left: 45px;
+}
+
+.time {
+  font-size: 10px;
+  color:lightgrey;
+  margin-bottom:10px;
+  margin-left: 85px;
+}
+
+.response-time {
+  float: right;
+  margin-right: 40px !important;
+}
+
+.response {
+  float: right;
+  margin-right: 0px !important;
+  margin-left:auto; /* flexbox alignment rule */
+}
+
+.footer-chat {
+  width: 100%;
+  height: 70px;
+  display:flex;
+  align-items: center;
+  background-color: transparent;
+  border-top: 2px solid;
+}
+
+.chat .footer-chat .icon {
+  margin-left: 30px;
+  font-size: 14pt;
+}
+
+.chat .footer-chat .send {
+  color:#fff;
+  background-color: #4f6ebd;
+  position: absolute;
+  right: 50px;
+  padding: 12px 12px 11px 10px;
+  border-radius: 50px;
+  font-size: 14pt;
+}
+
+.chat .footer-chat .name {
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+  font-family:'Montserrat', sans-serif;
+  font-size: 13pt;
+}
+
+.write-message {
+  border:none !important;
+  outline: none;
+  width:60%;
+  height: 38px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.footer-chat *::-webkit-input-placeholder,
+.footer-chat input *:-moz-placeholder,
+.footer-chat input *::-moz-placeholder,
+.footer-chat input *:-ms-input-placeholder {
+    font-size: 13pt;
+}
+.footer-chat input *::-moz-placeholder {
+  margin-left:5px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+/***************************************************************/
+/*   profile   */
+.profile_container {
+  width: 70%;
+  margin: 40px auto;
+}
+.profile_container .form-image {
+  margin-bottom: 34px;
+}
+
+.profile_container .form-input {
+  margin-bottom: 16px;
+}
+
+.profile_container .form-input label {
+  margin: 0;
+}
+
+.profile_container .form-input input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #eee;
+  padding: 6px;
+  width: 100%;
+}
+
+.profile_container .image_input {
+  display: none;
+}
+
+.profile_container .photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.profile_container .chose_photo {
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid #FAFAFA;
+  color: #555;
+  font-size: 12px;
+  position: relative;
+  top: 94px;
+  left: 90px;
+  width: 18px;
+  height: 18px;
+  padding: 2px 3px;
+}
+
+.profile_container .error-input {
+  border-bottom: 1px solid #e93535;
+}
