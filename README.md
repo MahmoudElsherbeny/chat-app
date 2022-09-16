@@ -24,7 +24,7 @@ Please check the official laravel installation guide for server requirements bef
 
 After clone the repository, Switch to the repo folder
 
-    cd ms-watches-app
+    cd chat-app
 
 Install all the dependencies using composer
 
