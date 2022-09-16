@@ -17,6 +17,13 @@ body {
     margin-top: 2px;
 }
 
+.empty_content {
+    color: #515151;
+    font-size: 22px;
+    font-family: monospace;
+    padding: 23% 0;
+  }
+
 .btn-none {
     background: none;
     border: none;
@@ -86,8 +93,7 @@ body {
 .discussions .discussion .name,
 .discussions .discussion .message,
 .chat .header-chat .name,
-.chat .footer-chat .name,
-.chat .messages-chat .chat_empty {
+.chat .footer-chat .name {
     color:#515151;
 }
 

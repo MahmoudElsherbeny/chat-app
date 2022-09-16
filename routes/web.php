@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'chat_app\HomeController@index')->middleware(['auth', 'verified'])->name('home');
-Route::get('/chat', 'chat_app\HomeController@chat_start')->middleware(['auth', 'verified'])->name('chat_start');
 
 //friends routes
 Route::group(['middleware'=>['auth','verified'], 'prefix'=>'friends', 'as'=>'friends.'] , function() {

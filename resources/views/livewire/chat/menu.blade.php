@@ -1,11 +1,12 @@
 <div>
-    
+    <!--
     <div class="discussion search">
         <div class="searchbar">
             <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" placeholder="Search..." />
+            <input type="text" wire:model.defer="search" placeholder="Search..." />
         </div>
     </div>
+-->
 
     <div class="discussions_container" wire:poll>
         @foreach ($chats as $chat)
@@ -35,9 +36,15 @@
                         <p class="message">{{ $chat->conversations->last()->message }}</p>
                     </div>
 
-                    @if(count($chat->conversations->where('receiver_id', Auth::id())->where('is_read', 0)) > 0)
-                        <div class="badge">{{ count($chat->conversations->where('receiver_id', Auth::id())->where('is_read', 0)) }}</div>
-                    @endif
+                    <div class="text-right" style="width: 22%">
+                        @if(count($chat->conversations->where('receiver_id', Auth::id())->where('is_read', 0)) > 0)
+                            <div class="badge">{{ count($chat->conversations->where('receiver_id', Auth::id())->where('is_read', 0)) }}</div>
+                        @endif
+
+                        <div class="conversation_time text-right">
+                            {{ $chat->conversations->last()->created_at->diffForHumans() }}
+                        </div>
+                    </div>
                 </a> 
             </div> 
         @endforeach

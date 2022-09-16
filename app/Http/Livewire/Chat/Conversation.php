@@ -35,15 +35,17 @@ class Conversation extends Component
                     ]);
                 }
 
-                $this->chat->conversations()->create([
+                $new_message = $this->chat->conversations()->create([
                     'sender_id' => Auth::id(),
                     'receiver_id' => $user_id,
                     'message' => $this->message,
                     'is_read' => 0,
                 ]);
 
+                $this->chat->touch();
+
                 $this->reset(['message']);
-                $this->emit('mark_read');
+                $this->emit(['mark_read', 'refresh_list']);
 
             DB::commit();
         } catch(Exception $e) {

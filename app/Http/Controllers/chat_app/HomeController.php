@@ -14,9 +14,5 @@ class HomeController extends Controller
         
         return view('chat_app.home')->with(['users' => $people_you_know]);
     }
-
-    public function chat_start()
-    {
-        return view('chat_app.pages.chat_start');
-    }
+    
 }

@@ -43,7 +43,7 @@
 
         @else
             @if(!$friend_relation_block)
-                <div class="chat_empty text-center">
+                <div class="empty_content text-center">
                     Start Chat With <span class="text-capitalize">{{ $chat_with->name }}</span>
                 </div>
             @endif

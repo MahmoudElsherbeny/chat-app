@@ -50,7 +50,7 @@
 }
 
 .discussions .discussions_container {
-  height: 90%;
+  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -108,7 +108,7 @@
 
 .discussions .discussion .desc-contact {
   height: 46px;
-  width:50%;
+  width:55%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -128,9 +128,14 @@
 
 .discussions .discussion .badge {
   border-radius: 50%;
-  margin-left: 17%;
   font-size: 12px;
+  margin-bottom: 6px;
   padding: 3px 6px;
+}
+
+.discussions .discussion .conversation_time {
+  color: #bbb;
+  font-size: 11px;
 }
 
 /**********************************************************/
@@ -243,12 +248,6 @@
     padding: 25px 28px;
     height: 77%;
     overflow-y: scroll;
-}
-
-.chat .messages-chat .chat_empty {
-  font-size: 22px;
-  font-family: monospace;
-  padding: 20% 0;
 }
 
 .chat .messages-chat .message {
